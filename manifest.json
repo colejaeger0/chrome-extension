@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "manifest_version": 3,
+  "author:": "asher edward and cole",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Test"
+  },
+  "content_scripts": [
+    {
+      "js": ["phil.js"],
+      "matches": ["https://www.google.com/*phillip+troutman*"]
+    },
+    {
+      "js": ["codesmith.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
